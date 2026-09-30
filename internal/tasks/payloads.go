@@ -52,12 +52,12 @@ func NewImageResizeTask(payload ImageResizePayload) (*asynq.Task, error) {
 
 // WebhookDeliveryPayload is the payload for the webhook delivery task.
 type WebhookDeliveryPayload struct {
-	WebhookID string            `json:"webhook_id"`
-	URL       string            `json:"url"`
-	Method    string            `json:"method"` // GET, POST, PUT, DELETE, etc.
-	Headers   map[string]string `json:"headers"`
-	Body      string            `json:"body"`
-	Timeout   int               `json:"timeout"` // Timeout in seconds for the webhook request.
+	WebhookID  string            `json:"webhook_id"`
+	URL        string            `json:"url"`
+	Method     string            `json:"method"` // GET, POST, PUT, DELETE, etc.
+	Headers    map[string]string `json:"headers"`
+	Body       json.RawMessage   `json:"body"`
+	RetryCount int               `json:"retry_count"`
 }
 
 // NewWebhookDeliveryTask creates a new webhook delivery task with the given payload.
