@@ -57,6 +57,7 @@ type WebhookDeliveryPayload struct {
 	Method     string            `json:"method"` // GET, POST, PUT, DELETE, etc.
 	Headers    map[string]string `json:"headers"`
 	Body       json.RawMessage   `json:"body"`
+	Timeout    time.Duration     `json:"timeout"`
 	RetryCount int               `json:"retry_count"`
 }
 
