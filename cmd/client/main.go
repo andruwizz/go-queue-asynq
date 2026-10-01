@@ -114,8 +114,8 @@ func enqueueTaskWithRetries(client *asynq.Client) {
 		// Maximum number of retry attempts
 		asynq.MaxRetry(5),
 
-		// Timeout for each attempt
-		asynq.Timeout(10*time.Second),
+		// Timeout for each attempts
+		asynq.Timeout(30*time.Second),
 
 		// Retention period after completion (for inspection)
 		asynq.Retention(24*time.Hour),

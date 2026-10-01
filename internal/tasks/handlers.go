@@ -74,7 +74,7 @@ type WebhookHandler struct {
 func NewWebhookHandler() *WebhookHandler {
 	return &WebhookHandler{
 		httpClient: &http.Client{
-			Timeout: 3 * time.Second,
+			Timeout: 30 * time.Second,
 		},
 	}
 }
