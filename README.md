@@ -116,16 +116,6 @@ Verify Redis is healthy:
 ```bash
 docker compose ps
 ```
-
-### 2. Environment Variables (Optional)
-
-The application connects to `localhost:6379` by default. You can customize the connection settings with environment variables:
-
-| Variable | Default | Description |
-|---|---|---|
-| `REDIS_ADDR` | `localhost:6379` | Host and port of the Redis server |
-| `REDIS_PASSWORD` | _(empty)_ | Authentication password for Redis |
-
 ---
 
 ## Running the Components
@@ -207,4 +197,4 @@ Failed tasks are managed through Asynq's built-in state transitions:
 
 ## Reference
 
-This repository is a hands-on from this post  [OneUptime - How to Build a Job Queue in Go with Asynq and Redis](https://oneuptime.com/blog/post/2026-01-07-go-asynq-job-queue-redis/view#creating-the-worker-server)
+This repository is a hands-on from this post  [OneUptime - How to Build a Job Queue in Go with Asynq and Redis](https://oneuptime.com/blog/post/2026-01-07-go-asynq-job-queue-redis)
