@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"go-job-queue/internal/config"
-	"go-job-queue/internal/tasks"
+	"go-queue-asynq/internal/config"
+	"go-queue-asynq/internal/tasks"
 	"log"
 
 	"time"

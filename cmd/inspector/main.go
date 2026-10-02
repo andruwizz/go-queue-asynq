@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-job-queue/internal/config"
+	"go-queue-asynq/internal/config"
 	"log"
 
 	"github.com/hibiken/asynq"

@@ -1,4 +1,4 @@
-module go-job-queue
+module go-queue-asynq
 
 go 1.26.4
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-job-queue/internal/config"
+	"go-queue-asynq/internal/config"
 	"log"
 	"net/http"
 
