@@ -1,0 +1,40 @@
+# Git
+.git/
+.github/
+.gitignore
+
+# Environment files
+.env
+*.env
+*.env.*
+
+# Local compiled binaries and object files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+server
+
+# Test artifacts and coverage
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker and local compose files
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Documentation and meta files (not needed inside binary build)
+README.md
+LICENSE
