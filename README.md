@@ -92,14 +92,10 @@ This project showcases asynchronous task processing patterns including priority 
 └── go.sum                   # Dependency checksums
 ```
 
----
-
 ## Prerequisites
 
 - [Go](https://go.dev/dl/) 1.22+ (tested with Go 1.26)
 - [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/) (for running Redis)
-
----
 
 ## Getting Started
 
@@ -116,7 +112,7 @@ Verify Redis is healthy:
 ```bash
 docker compose ps
 ```
----
+
 
 ## Running the Components
 
@@ -166,8 +162,6 @@ make run-inspector
 # or: go run cmd/inspector/main.go
 ```
 
----
-
 ## Queue Configuration
 
 The worker server defines three prioritized queues:
@@ -179,8 +173,6 @@ The worker server defines three prioritized queues:
 | `low` | 1 | Background bulk workloads (e.g., scheduled reports, digests) |
 
 With `StrictPriority: true`, tasks in the `critical` queue are always processed before tasks in `default`, which in turn take precedence over `low`.
-
----
 
 ## Dead Letter Queue (DLQ) & Error Handling
 
